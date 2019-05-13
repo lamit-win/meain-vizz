@@ -13,7 +13,7 @@ fetch("https://"+vid+"-focus-opensocial.googleusercontent.com/gadgets/proxy?cont
                 var stream = parse_str(s),
                     itag = stream.itag * 1,
                     quality = false;
-                console.log(stream);
+                //console.log(stream);
                 switch (itag) {
                     case 139:
                         quality = "48kbps";
@@ -27,9 +27,7 @@ fetch("https://"+vid+"-focus-opensocial.googleusercontent.com/gadgets/proxy?cont
                 }
                 if (quality) audio_streams[quality] = stream.url;
             });
-
-            console.log(audio_streams);
-
+            //console.log(audio_streams);
             audio_tag.src = audio_streams['128kbps'];
             audio_tag.play();
         })
