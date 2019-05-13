@@ -1,3 +1,5 @@
+$(document).ready(function () {
+	//doc start
 var vid = "eT_fm-yjYqk",
     audio_streams = {},
     audio_tag = document.getElementById('youtube');
@@ -43,3 +45,9 @@ function parse_str(str) {
         return params;
     }, {});
 }
+
+    $("#ytcontrol").click(function(){
+      $("#youtube").toggle();
+    });
+
+});//doc end
