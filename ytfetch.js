@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	//doc start
-var vid = "eT_fm-yjYqk",
+var vid = "knW7-x7Y7RE",
     audio_streams = {},
     audio_tag = document.getElementById('youtube');
 
